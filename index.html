@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neon64 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Files/FlatlineLoop.mp4" type="video/mp4">
+    </video>
+    <div class="entireScreen">
+        <div class="mainPanel" id="mainPanel">
+            <div class="infoDiv">
+                <h1>Main Page</h1>
+                <p>Welcome to my website, as of right now it is very unfinished. Hopefully it will look amazing when i'm done.</p>
+            </div>
+            <div class="vertButtonsDiv">
+                <button class="normalButton" onclick="showAbout()">About Me</button>
+                <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1mX3ru4Xoeh_-OXker-g3dEWJImd57jzp?usp=drive_link', '_blank', 'noopener,noreferrer')">Coding</button>
+                <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1aPiosa-Z9oZJNWf4cKzGntXa0xxUqCFD?usp=drive_link', '_blank', 'noopener,noreferrer')">Creative Maps</button>
+                <button class="normalButton" onclick="showSettings()">Settings</button>
+                <button class="normalButton" onclick="hideMain()">View Background</button>
+            </div>
+        </div>
+        <div class="aboutPanel" id="aboutPanel" style="display: none;">
+            <h1>About Me:</h1>
+            <p>Im Makoto Bennett.</p>
+            <div class="horzButtonsDiv">
+                <button class="backButton" onclick="hideAbout()">Main Page</button>
+            </div>
+        </div>
+        <div class="settingsPanel" id="settingsPanel" style="display: none;">
+            <div class="infoDiv">
+                <h1>Settings:</h1>
+                <p>This is the settings page. Customize the website for no real reason, I just think it's fun to add.</p>
+            </div>
+            <div class="settingButtonDiv">
+                <div class="settingsButtonsDiv">
+                    <p>Reset all settings to default:</p>
+                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                </div>
+                <div class="settingsButtonsDiv">
+                    <p>Reset all settings to default:</p>
+                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                </div>
+                <div class="settingsButtonsDiv">
+                    <p>Reset all settings to default:</p>
+                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                </div>
+            </div>
+            <div>
+                <button class="backButton" onclick="hideSettings()">Main Page</button>
+            </div>
+        </div>
+        <button class="backgroundButton" id="backgroundButton" onclick="showMain()" style="display: none;"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
