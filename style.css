@@ -17,7 +17,7 @@
 
         h1 {
             color: var(--primary-color);
-            font-size: 40px;
+            font-size: 50px;
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
@@ -29,6 +29,14 @@
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 0.2px;
             -webkit-text-stroke-color: black;
+            background-color: rgba(0, 0, 0, 50%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-style: solid;
+            border-width: 1px;
+            border-color: #111111;
+            border-radius: 15px;
+            padding: 10px;
         }
 
         #bg-video {
@@ -78,7 +86,7 @@
             width: 90%;
             height: 90%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             background-color: rgba(0, 0, 0, 50%);
@@ -112,12 +120,22 @@
             box-shadow: 0 0 50px 5px var(--primary-color);
         }
 
-        .infoDiv {
+        .mainInfoDiv {
             width: 75%;
             height: 95%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: flex-start;
+            margin: 25px;
+        }
+
+        .infoDiv {
+            width: 75%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
             align-items: flex-start;
             margin: 25px;
         }
@@ -145,6 +163,7 @@
             justify-content: center;
             align-items: center;
             gap: 25px;
+            margin: 20px;
         }
 
         .settingsButtonsDiv {
@@ -163,8 +182,6 @@
             padding: 25px;
             gap: 25px;
         }
-
-        /* Buttons */
 
         /* Socials */
         .socialsDiv {
@@ -230,7 +247,28 @@
             box-shadow: 0 0 50px 5px #00ff00;
             transition: all 0.1s ease-in-out 0.1s;
         }
+        .gitButton {
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            background-color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #808080;
+            border-radius: 10px;
+            color: #808080;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+
+        .gitButton:hover {
+            background-color: #808080;
+            color: white;
+            box-shadow: 0 0 50px 5px #808080;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
         /* End of Socials */
+
+        /* Buttons */
         .normalButton {
             width: 160px;
             height: 75px;
@@ -261,7 +299,6 @@
             border-radius: 10px;
             color: red;
             transition: all 0.1s ease-in-out 0.1s;
-            margin: 25px;
         }
         .backButton:hover {
             background-color: red;
