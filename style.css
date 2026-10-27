@@ -12,11 +12,12 @@
         body {
             background: linear-gradient(to top, var(--background-color), rgb(0, 0, 0));
             overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         h1 {
             color: var(--primary-color);
-            font-size: 75px;
+            font-size: 40px;
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
@@ -24,7 +25,7 @@
 
         p {
             color: white;
-            font-size: 30px;
+            font-size: 20px;
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 0.2px;
             -webkit-text-stroke-color: black;
@@ -69,7 +70,7 @@
             border-color: var(--primary-color);
             border-radius: 15px;
             color: var(--primary-color);
-            gap: 30px;
+            gap: 10px;
             box-shadow: 0 0 50px 5px var(--primary-color);
         }
 
@@ -116,21 +117,9 @@
             height: 95%;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: flex-start;
             margin: 25px;
-            gap: 25px;
-        }
-
-        .infoSettingsDiv {
-            width: 25%;
-            height: 95%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin: 25px;
-            gap: 25px;
         }
 
         /* Containers */
@@ -159,7 +148,7 @@
         }
 
         .settingsButtonsDiv {
-            width: 750px;
+            width: 550px;
             height: 75px;
             display: flex;
             flex-direction: row;
@@ -176,6 +165,72 @@
         }
 
         /* Buttons */
+
+        /* Socials */
+        .socialsDiv {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        .ytButton {
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            background-color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #ff0000;
+            border-radius: 10px;
+            color: #ff0000;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+
+        .ytButton:hover {
+            background-color: #ff0000;
+            color: white;
+            box-shadow: 0 0 50px 5px #ff0000;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+        .dcButton {
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            background-color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #0000ff;
+            border-radius: 10px;
+            color: #0000ff;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+
+        .dcButton:hover {
+            background-color: #0000ff;
+            color: white;
+            box-shadow: 0 0 50px 5px #0000ff;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+        .drButton {
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            background-color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #00ff00;
+            border-radius: 10px;
+            color: #00ff00;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+
+        .drButton:hover {
+            background-color: #00ff00;
+            color: white;
+            box-shadow: 0 0 50px 5px #00ff00;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+        /* End of Socials */
         .normalButton {
             width: 160px;
             height: 75px;
@@ -190,11 +245,9 @@
         }
 
         .normalButton:hover {
-            width: 170px;
-            height: 85px;
-            font-size: 23px;
             background-color: var(--primary-color);
             color: white;
+            box-shadow: 0 0 50px 5px var(--primary-color);
             transition: all 0.1s ease-in-out 0.1s;
         }
         .backButton {
@@ -211,12 +264,10 @@
             margin: 25px;
         }
         .backButton:hover {
-            width: 170px;
-            height: 85px;
-            font-size: 23px;
             background-color: red;
             color: white;
             transition: all 0.1s ease-in-out 0.1s;
+            box-shadow: 0 0 50px 5px red;
         }
         .unavailable {
             width: 160px;
