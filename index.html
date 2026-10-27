@@ -9,43 +9,55 @@
         <source src="Files/FlatlineLoop.mp4" type="video/mp4">
     </video>
     <div class="entireScreen">
-        <div class="mainPanel" id="mainPanel">
+        <!--Home!!!!!!!!!!!!!!!-->
+        <div class="mainPanel" id="mainPanel"> 
             <div class="infoDiv">
                 <h1>Main Page</h1>
                 <p>Welcome to my website, as of right now it is very unfinished. Hopefully it will look amazing when i'm done.</p>
+                <p>This website is my portfolio now, but I'm also making it to have something to do. You'll find links to a Google Drive I have curated showing code I've made, Fortnite Creative maps I've created using UEFN and the usual 1.0 tools, models, and more.</p>
+                <p>The video in the background is a Fortnite Creative map I made with UEFN, called Flatline City. It started out as just some new Japanese streets the Fortnite Devs had gracefully given me, but quickly unfurled into a full blown map. You can see more of it using the "Creative Maps" button.</p>
+                <div class="socialsDiv">
+                    <button class="ytButton" onclick="window.open('https://youtube.com/@Neon64makoto', '_blank', 'noopener,noreferrer')">Youtube</button>
+                    <button class="dcButton" onclick="window.open('https://discord.gg/x7n5HUeEqZ', '_blank', 'noopener,noreferrer')">Discord</button>
+                    <button class="drButton" onclick="window.open('https://drive.google.com/drive/folders/1k42BN-eq0QPVILwqJhocId-FVBuYQ-Vp?usp=drive_link', '_blank', 'noopener,noreferrer')">Google Drive</button>
+                </div>
             </div>
             <div class="vertButtonsDiv">
                 <button class="normalButton" onclick="showAbout()">About Me</button>
                 <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1mX3ru4Xoeh_-OXker-g3dEWJImd57jzp?usp=drive_link', '_blank', 'noopener,noreferrer')">Coding</button>
-                <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1aPiosa-Z9oZJNWf4cKzGntXa0xxUqCFD?usp=drive_link', '_blank', 'noopener,noreferrer')">Creative Maps</button>
+                <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1nywiMogm31GjMGmQQfoWQGwTB_TcZ0nD?usp=drive_link', '_blank', 'noopener,noreferrer')">Creative Maps</button>
                 <button class="normalButton" onclick="showSettings()">Settings</button>
                 <button class="normalButton" onclick="hideMain()">View Background</button>
             </div>
         </div>
-        <div class="aboutPanel" id="aboutPanel" style="display: none;">
+        <!-- About!!!!!!!!!!!!!!! -->
+        <div class="aboutPanel" id="aboutPanel" style="display: none;"> 
             <h1>About Me:</h1>
             <p>Im Makoto Bennett.</p>
             <div class="horzButtonsDiv">
                 <button class="backButton" onclick="hideAbout()">Main Page</button>
             </div>
         </div>
+        <!-- Settings!!!!!!!!!!!!!!! -->
         <div class="settingsPanel" id="settingsPanel" style="display: none;">
             <div class="infoDiv">
-                <h1>Settings:</h1>
+                <h1>Settings:</h1> 
                 <p>This is the settings page. Customize the website for no real reason, I just think it's fun to add.</p>
+                <p>Reset all settings to default:</p>
+                <button class="backButton" onclick="reset()">Reset</button>
             </div>
             <div class="settingButtonDiv">
                 <div class="settingsButtonsDiv">
-                    <p>Reset all settings to default:</p>
-                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                    <p>Change main color to Blue:</p>
+                    <button class="normalButton" onclick="setBlue()">Change</button>
                 </div>
                 <div class="settingsButtonsDiv">
-                    <p>Reset all settings to default:</p>
-                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                    <p>Change main color to Red:</p>
+                    <button class="normalButton" onclick="setRed()">Change</button>
                 </div>
                 <div class="settingsButtonsDiv">
-                    <p>Reset all settings to default:</p>
-                    <button class="normalButton" onclick="showSettings()">Reset</button>
+                    <p>Change main color to Green:</p>
+                    <button class="normalButton" onclick="setGreen()">Change</button>
                 </div>
             </div>
             <div>
