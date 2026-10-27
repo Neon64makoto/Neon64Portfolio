@@ -9,18 +9,24 @@
         <source src="Files/FlatlineLoop.mp4" type="video/mp4">
     </video>
     <div class="entireScreen">
-        <!--Home!!!!!!!!!!!!!!!-->
+        <!--Home ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="mainPanel" id="mainPanel"> 
-            <div class="infoDiv">
-                <h1>Main Page</h1>
-                <p>Welcome to my website, as of right now it is very unfinished. Hopefully it will look amazing when i'm done.</p>
-                <p>This website is my portfolio now, but I'm also making it to have something to do. You'll find links to a Google Drive I have curated showing code I've made, Fortnite Creative maps I've created using UEFN and the usual 1.0 tools, models, and more.</p>
-                <p>The video in the background is a Fortnite Creative map I made with UEFN, called Flatline City. It started out as just some new Japanese streets the Fortnite Devs had gracefully given me, but quickly unfurled into a full blown map. You can see more of it using the "Creative Maps" button.</p>
+            <div class="mainInfoDiv">
+                <h1>Main Page:</h1>
+                <p>Welcome to my website, as of right now it is very unfinished. Hopefully it will look amazing when i'm done.
+                <br>
+                <br>
+                <br>
+                This website is my portfolio now, but I'm also making it to have something to do. You'll find links to a Google Drive I have curated showing code I've made, Fortnite Creative maps I've created using UEFN and the usual 1.0 tools, models, and more.
+                <br>
+                <br>
+                <br>
+                The video in the background is a Fortnite Creative map I made with UEFN, called Flatline City. It started out as just some new Japanese streets the Fortnite Devs had gracefully given me, but quickly unfurled into a full blown map. You can see more of it using the "Creative Maps" button.</p>
                 <div class="socialsDiv">
                     <button class="ytButton" onclick="window.open('https://youtube.com/@Neon64makoto', '_blank', 'noopener,noreferrer')">Youtube</button>
                     <button class="dcButton" onclick="window.open('https://discord.gg/x7n5HUeEqZ', '_blank', 'noopener,noreferrer')">Discord</button>
                     <button class="drButton" onclick="window.open('https://drive.google.com/drive/folders/1k42BN-eq0QPVILwqJhocId-FVBuYQ-Vp?usp=drive_link', '_blank', 'noopener,noreferrer')">Google Drive</button>
-                    <button class="dcButton" onclick="window.open('https://github.com/Neon64makoto', '_blank', 'noopener,noreferrer')">Github</button>
+                    <button class="gitButton" onclick="window.open('https://github.com/Neon64makoto', '_blank', 'noopener,noreferrer')">Github</button>
                     <button class="dcButton" onclick="showSettings()">Settings</button>
                     <button class="dcButton" onclick="hideMain()">View Background</button>
                 </div>
@@ -29,17 +35,27 @@
                 <button class="normalButton" onclick="showAbout()">About Me</button>
                 <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1mX3ru4Xoeh_-OXker-g3dEWJImd57jzp?usp=drive_link', '_blank', 'noopener,noreferrer')">Coding</button>
                 <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1nywiMogm31GjMGmQQfoWQGwTB_TcZ0nD?usp=drive_link', '_blank', 'noopener,noreferrer')">Creative Maps</button>
+                <button class="normalButton" onclick="window.open('https://drive.google.com/drive/folders/1DPLQJEpBao1AMJYbiWO_HuoWpipzMRBJ?usp=drive_link', '_blank', 'noopener,noreferrer')">Models</button>
             </div>
         </div>
-        <!-- About!!!!!!!!!!!!!!! -->
+        <!-- End of Home ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        
+        <!-- About ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="aboutPanel" id="aboutPanel" style="display: none;"> 
-            <h1>About Me:</h1>
-            <p>Im Makoto Bennett.</p>
-            <div class="horzButtonsDiv">
+            <div class="infoDiv">
+                <h1>About Me:</h1>
+                <p>I'm Makoto Bennett. I am (at the time of writing this) 17 years old, my birthday is 4/12/2009. I spent a good portion of my life making creative maps in Fortnite Creative, from Chapter 1 Season 7 when it came out, all the way to Chapter 7 Season 4, when I stopped using Fortnite all together. 
+                <br>
+                <br>
+                Technically I've been coding since I was 10 or so because I started messing with Scratch. But when it comes to <strong>actually</strong> coding without the use of any AI, I have only recently started. Which is why this website has come to fruition. Before this I had a partially vibe coded website that I wasn't very happy with, and I knew I should make a website myself without the use of any AI. So that's what I did. And of course you are viewing that now.</p>
+            </div>
+            <div class="vertButtonsDiv">
                 <button class="backButton" onclick="hideAbout()">Main Page</button>
             </div>
         </div>
-        <!-- Settings!!!!!!!!!!!!!!! -->
+        <!-- End of About ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        
+        <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="settingsPanel" id="settingsPanel" style="display: none;">
             <div class="infoDiv">
                 <h1>Settings:</h1> 
@@ -61,10 +77,11 @@
                     <button class="normalButton" onclick="setGreen()">Change</button>
                 </div>
             </div>
-            <div>
+            <div class="vertButtonsDiv">
                 <button class="backButton" onclick="hideSettings()">Main Page</button>
             </div>
         </div>
+        <!-- End of Settings ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <button class="backgroundButton" id="backgroundButton" onclick="showMain()" style="display: none;"></button>
     </div>
     <script src="script.js"></script>
