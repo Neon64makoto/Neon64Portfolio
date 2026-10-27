@@ -1,11 +1,7 @@
-        // simple variables.
-        let Temp1 = 1;
-        let Temp2 = 2;
-        let Temp3 = 3;
         const aboutPanel = document.getElementById('aboutPanel');
         const mainPanel = document.getElementById('mainPanel');
         const backgroundButton = document.getElementById('backgroundButton');
-        const settingsPanel = document.getElementById('settingsPanel');
+        const settingsPanel = document.getElementById('settingsPanel'); 
 
         function showAbout() {
             mainPanel.style.display = "none";
@@ -30,6 +26,20 @@
         function hideSettings() {
             settingsPanel.style.display = "none";
             mainPanel.style.display = "";
+        }
+
+        function setBlue() {
+            document.documentElement.style.setProperty('--primary-color', '#0000ff');
+        }
+        function setRed() {
+            document.documentElement.style.setProperty('--primary-color', '#ff0000');
+        }
+        function setGreen() {
+           document.documentElement.style.setProperty('--primary-color', '#00ff00'); 
+        }
+
+        function reset() {
+           document.documentElement.style.setProperty('--primary-color', '#0000ff'); 
         }
 
         function update() {
