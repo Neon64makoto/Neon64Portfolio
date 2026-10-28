@@ -1,4 +1,4 @@
-        :root {
+            :root {
             --primary-color: #0000ff;
             --background-color: #000032;
         }
@@ -24,7 +24,7 @@
         }
 
         p {
-            color: white;
+            color: --primary-color;
             font-size: 20px;
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 0.2px;
@@ -33,7 +33,7 @@
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border-style: solid;
-            border-width: 1px;
+            border-width: 0px;
             border-color: #111111;
             border-radius: 15px;
             padding: 10px;
