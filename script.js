@@ -35,14 +35,14 @@
             document.documentElement.style.setProperty('--primary-color', '#ff0000');
         }
         function setGreen() {
-           document.documentElement.style.setProperty('--primary-color', '#00ff00'); 
+            document.documentElement.style.setProperty('--primary-color', '#00ff00'); 
         }
 
         function reset() {
-           document.documentElement.style.setProperty('--primary-color', '#0000ff'); 
+            document.documentElement.style.setProperty('--primary-color', '#0000ff'); 
         }
 
         function update() {
-            // this function will run every 0 miliseconds, thats what the interval below does, changing the number next to "update," will change how quickly this function gets ran.
+            // nothing
         };
-        let intervalUPDATE = setInterval(update, 0);
+        let intervalUPDATE = setInterval(update, 10);
