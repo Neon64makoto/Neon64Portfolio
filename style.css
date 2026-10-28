@@ -1,5 +1,5 @@
             :root {
-            --primary-color: #0000ff;
+            --primary-color: #1111ff;
             --background-color: #000032;
         }
 
@@ -25,7 +25,7 @@
 
         p {
             color: --primary-color;
-            font-size: 20px;
+            font-size: clamp(0.875rem, 1.1vw + 0.85rem, 18px);
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 0.2px;
             -webkit-text-stroke-color: black;
@@ -37,6 +37,7 @@
             border-color: #111111;
             border-radius: 15px;
             padding: 10px;
+            box-shadow: 0 0 50px 5px #000000;
         }
 
         #bg-video {
