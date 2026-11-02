@@ -17,7 +17,7 @@
 
         h1 {
             color: var(--primary-color);
-            font-size: 50px;
+            font-size: 49px;
             text-shadow: 1px 1px 0px rgba(0,0,0,1);
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
@@ -38,9 +38,10 @@
             border-radius: 15px;
             padding: 10px;
             box-shadow: 0 0 50px 5px #000000;
+            overflow: auto;
         }
 
-        #bg-video {
+        img {
             position: fixed;
             top: 0;
             left: 0;
@@ -79,8 +80,9 @@
             border-color: var(--primary-color);
             border-radius: 15px;
             color: var(--primary-color);
-            gap: 10px;
+            gap: 30px;
             box-shadow: 0 0 50px 5px var(--primary-color);
+            overflow: auto;
         }
 
         .aboutPanel {
@@ -100,6 +102,7 @@
             color: var(--primary-color);
             gap: 30px;
             box-shadow: 0 0 50px 5px var(--primary-color);
+            overflow: auto;
         }
 
         .settingsPanel {
@@ -119,11 +122,12 @@
             color: var(--primary-color);
             gap: 30px;
             box-shadow: 0 0 50px 5px var(--primary-color);
+            overflow: auto;
         }
 
         .mainInfoDiv {
-            width: 75%;
-            height: 95%;
+            width: 85%;
+            height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -132,8 +136,8 @@
         }
 
         .infoDiv {
-            width: 75%;
-            height: 95%;
+            width: 60vw;
+            height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -164,7 +168,7 @@
             justify-content: center;
             align-items: center;
             gap: 25px;
-            margin: 20px;
+            margin: 25px;
         }
 
         .settingsButtonsDiv {
