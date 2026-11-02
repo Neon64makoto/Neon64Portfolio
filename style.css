@@ -5,8 +5,9 @@
 
         
         html {
-            scrollbar-color: #0000ff #000000;
+            scrollbar-color: var(--primary-color) #111111;
             scrollbar-width: auto;
+            scrollbar-gutter: auto;
         }
         
         body {
@@ -39,6 +40,7 @@
             padding: 10px;
             box-shadow: 0 0 50px 5px #000000;
             overflow: auto;
+            scrollbar-gutter: auto;
         }
 
         img {
@@ -269,6 +271,25 @@
             background-color: #808080;
             color: white;
             box-shadow: 0 0 50px 5px #808080;
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+        .utilButton {
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            background-color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-color: var(--primary-color);
+            border-radius: 10px;
+            color: var(--primary-color);
+            transition: all 0.1s ease-in-out 0.1s;
+        }
+
+        .utilButton:hover {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 0 50px 5px var(--primary-color);
             transition: all 0.1s ease-in-out 0.1s;
         }
         /* End of Socials */
