@@ -1,4 +1,5 @@
         const aboutPanel = document.getElementById('aboutPanel');
+        const thoughtsPanel = document.getElementById('thoughtsPanel');
         const mainPanel = document.getElementById('mainPanel');
         const backgroundButton = document.getElementById('backgroundButton');
         const settingsPanel = document.getElementById('settingsPanel'); 
@@ -10,6 +11,14 @@
         function hideAbout() {
             mainPanel.style.display = "";
             aboutPanel.style.display = "none"; 
+        }
+        function showThoughts() {
+            mainPanel.style.display = "none";
+            thoughtsPanel.style.display = "";
+        }
+        function hideThoughts() {
+            mainPanel.style.display = "";
+            thoughtsPanel.style.display = "none"; 
         }
         function showMain() {
             mainPanel.style.display = "";
@@ -29,7 +38,7 @@
         }
 
         function setBlue() {
-            document.documentElement.style.setProperty('--primary-color', '#0000ff');
+            document.documentElement.style.setProperty('--primary-color', '#1111ff');
         }
         function setRed() {
             document.documentElement.style.setProperty('--primary-color', '#ff0000');
