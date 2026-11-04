@@ -46,6 +46,9 @@
         function setGreen() {
             document.documentElement.style.setProperty('--primary-color', '#00ff00'); 
         }
+        function setWhite() {
+            document.documentElement.style.setProperty('--primary-color', '#ffffff'); 
+        }
 
         function reset() {
             document.documentElement.style.setProperty('--primary-color', '#0000ff'); 
