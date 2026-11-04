@@ -138,7 +138,7 @@
         }
 
         .infoDiv {
-            width: 60vw;
+            width: 90%;
             height: 90%;
             display: flex;
             flex-direction: column;
@@ -146,18 +146,16 @@
             align-items: flex-start;
             margin: 25px;
         }
-
-        /* Containers */
-        .settingButtonDiv {
-            width: 75%;
-            height: 95%;
+        .settingsInfoDiv {
+            width: 25%;
+            height: 90%;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 25px;
         }
-        
+        /* Containers */
         .horzButtonsDiv {
             display: flex;
             justify-content: center;
@@ -174,10 +172,10 @@
         }
 
         .settingsButtonsDiv {
-            width: 550px;
-            height: 75px;
+            width: 40%;
+            height: 75%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             background-color: black;
@@ -186,6 +184,18 @@
             border-color: var(--primary-color);
             border-radius: 10px;
             color: var(--primary-color);
+            padding: 25px;
+            gap: 25px;
+            overflow: auto;
+            scrollbar-gutter: auto;
+        }
+        .settingsButtonHorz {
+            width: 90%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             padding: 25px;
             gap: 25px;
         }
@@ -296,9 +306,9 @@
 
         /* Buttons */
         .normalButton {
-            width: 160px;
-            height: 75px;
-            font-size: 20px;
+            width: 150px;
+            height: 70px;
+            font-size: 17px;
             background-color: black;
             border-style: solid;
             border-width: 5px;
@@ -315,9 +325,9 @@
             transition: all 0.1s ease-in-out 0.1s;
         }
         .backButton {
-            width: 160px;
-            height: 75px;
-            font-size: 20px;
+            width: 150px;
+            height: 70px;
+            font-size: 17px;
             background-color: black;
             border-style: solid;
             border-width: 5px;
