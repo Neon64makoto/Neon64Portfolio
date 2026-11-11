@@ -7,12 +7,13 @@
 <body>
     <img src="Files/FUP.png" alt="My first Unity project, it should be the background for this website." />
     <div class="entireScreen">
+		<p class="tag">v0.3.5</p>
         <!--Home ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="mainPanel" id="mainPanel"> 
             <div class="mainInfoDiv">
                 <div class="infoDiv">
                 <h1>Main Page:</h1>
-                <p>Welcome to my website, this is my little portfolio. 
+                <p class="p">Welcome to my website, this is my little portfolio. 
                 <br>
                 <br> 
                 On the right, there are buttons. About me and My Thoughts will keep you on this website, but the other 4 will bring you to public Google Drive pages showing things I've created myself. On the bottom are my social links, the Discord button is my personal server. The Google Drive button brings you to the folder right before Coding, Models, Creative Maps, and Unity Projects. Github will bring you to my profile. Settings will let you change the main color of the site from blue to red or green. Helpful if you are having trouble reading this. View Background will hide this main panel, click anywhere to show this panel again.
@@ -25,8 +26,8 @@
                     <button class="drButton" onclick="window.open('https://drive.google.com/drive/folders/1k42BN-eq0QPVILwqJhocId-FVBuYQ-Vp?usp=drive_link', '_blank', 'noopener,noreferrer')">Google Drive</button>
                     <button class="dcButton" onclick="window.open('https://discord.gg/x7n5HUeEqZ', '_blank', 'noopener,noreferrer')">Discord</button>
                     <button class="gitButton" onclick="window.open('https://github.com/Neon64makoto', '_blank', 'noopener,noreferrer')">Github</button>
-                    <button class="utilButton" onclick="showSettings()">Settings</button>
-                    <button class="utilButton" onclick="hideMain()">View Background</button>
+					<button class="utilButton" onclick="showSettings()">Settings</button>
+                	<button class="utilButton" onclick="hideMain()">View Background</button>
                 </div>
             </div>
             <div class="vertButtonsDiv">
@@ -44,7 +45,7 @@
         <div class="aboutPanel" id="aboutPanel" style="display: none;"> 
             <div class="infoDiv">
                 <h1>About Me:</h1>
-                <p>I'm Makoto Bennett. I am (at the time of writing this) 17 years old, my birthday is 4/12/2009. I spent a good portion of my life making creative maps in Fortnite Creative, from Chapter 1 Season 7 when it came out, all the way to Chapter 7 Season 4, when I stopped using Fortnite altogether. 
+                <p class="p">I'm Makoto Bennett. I am (at the time of writing this) 17 years old, my birthday is 4/12/2009. I spent a good portion of my life making creative maps in Fortnite Creative, from Chapter 1 Season 7 when it came out, all the way to Chapter 7 Season 4, when I stopped using Fortnite altogether. 
                 <br>
                 <br>
                 Technically I've been coding since I was 10 or so because I started messing with Scratch. But when it comes to <strong>actually</strong> coding without the use of any AI, I have only recently started. Which is why this website has come to fruition. Before this I had a partially vibe coded website that I wasn't very happy with, and I knew I should make a website myself without the use of any AI. So that's what I did, and of course you are viewing that now.
@@ -75,7 +76,7 @@
         <div class="aboutPanel" id="thoughtsPanel" style="display: none;"> 
             <div class="infoDiv">
                 <h1>My Thoughts:</h1>
-                <p>
+                <p class="p">
                 <strong>11/9/2026:</strong> A few things; I got sick and didn't go to school Friday, I beat Blade and Sorcery on permadeath, and I got unreasonbly stressed when I was putting groceries up. To touch on that last one, it coincides with how I've generally been feeling about the state of my living situation and life. First about me I guess. I lack a lot of motivation to be a healthier person, I manage to be when I'm in a relationship with someone or have a crush on someone, but thats all, I struggle to get myself to do good things for myself when there isn't another person in my life. Which, you know, really sucks. I need and want to get out of bed earlier, on time at 6 AM or earlier, but I just can't. I also keep feeling overwhelmed by everything still, not as crushing as it was when I was in a long distance relationship, but still. I have so many games I still need to complete, I need to learn how to code in Unity, I need to get better at modeling so I can make more complex objects for my scene, I need to figure out how to make actual materials that are actually asigned to the models I make in blender. I need to take the ACT, I need to figure out my college situation, I need to pass school still, I need to keep up in US History just enough to not fail that witches class. Then I need and or want to play games with my few friends I have and that's sometimes too much to keep up with and I just end up wasting all my time watching a YouTube video I've probably already seen before. 
 				<br>
                 <br>
@@ -126,10 +127,6 @@
         
         <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="settingsPanel" id="settingsPanel" style="display: none;">
-            <div class="settingsInfoDiv">
-                <h1>Settings:</h1> 
-                <button class="backButton" onclick="reset()">Reset</button>
-            </div>
             <div class="settingsButtonsDiv">
                 <div class="settingsButtonHorz">
                     <p>Change main color to Red:</p>
@@ -150,6 +147,7 @@
             </div>
             <div class="vertButtonsDiv">
                 <button class="backButton" onclick="hideSettings()">Main Page</button>
+				<button class="backButton" onclick="reset()">Reset</button>
             </div>
         </div>
         <!-- End of Settings ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
