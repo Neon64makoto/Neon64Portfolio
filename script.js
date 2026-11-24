@@ -1,5 +1,5 @@
         const aboutPanel = document.getElementById('aboutPanel');
-        const thoughtsPanel = document.getElementById('thoughtsPanel');
+        const fcPanel = document.getElementById('fcPanel');
         const mainPanel = document.getElementById('mainPanel');
         const backgroundButton = document.getElementById('backgroundButton');
         const settingsPanel = document.getElementById('settingsPanel'); 
@@ -12,13 +12,13 @@
             mainPanel.style.display = "";
             aboutPanel.style.display = "none"; 
         }
-        function showThoughts() {
+        function showFC() {
             mainPanel.style.display = "none";
-            thoughtsPanel.style.display = "";
+            fcPanel.style.display = "";
         }
-        function hideThoughts() {
+        function hideFC() {
             mainPanel.style.display = "";
-            thoughtsPanel.style.display = "none"; 
+            fcPanel.style.display = "none"; 
         }
         function showMain() {
             mainPanel.style.display = "";
